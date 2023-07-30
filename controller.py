@@ -15,6 +15,7 @@ class BookController:
             book = self.model.get_books(name, author, language, genre)
             self.view.display_book_info(book.title, book.author, book.languages, book.copyright)
         
+        #Tags
         elif choice == '1':
             db = input('\n0 - Add to tag\n1 - View tag\n')
             
